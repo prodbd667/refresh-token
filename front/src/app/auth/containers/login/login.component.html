@@ -1,0 +1,15 @@
+<div class="header center">log in</div>
+
+<form [formGroup]="loginForm" (ngSubmit)="login()">
+  <input type="text"
+         id="username"
+         placeholder="Username"
+         formControlName="username"
+  />
+
+
+  <div class="actions">
+    <button type="submit"
+            [disabled]="!loginForm.valid">log in</button>
+  </div>
+</form>
